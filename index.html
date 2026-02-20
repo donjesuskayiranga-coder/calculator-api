@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultIQ Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="calculator">
+  <div class="calc-header">
+    <div class="calc-brand">Vault<span>IQ</span> Calc</div>
+    <div class="calc-dot"></div>
+  </div>
+
+  <div class="display">
+    <div class="display-expression" id="expression"></div>
+    <div class="display-value" id="display">0</div>
+  </div>
+
+  <div class="buttons">
+    <button class="btn btn-clear" onclick="clearAll()">AC</button>
+    <button class="btn btn-special" onclick="toggleSign()">+/−</button>
+    <button class="btn btn-special" onclick="percentage()">%</button>
+    <button class="btn btn-op" onclick="setOperator('/')">÷</button>
+
+    <button class="btn btn-num" onclick="appendNum('7')">7</button>
+    <button class="btn btn-num" onclick="appendNum('8')">8</button>
+    <button class="btn btn-num" onclick="appendNum('9')">9</button>
+    <button class="btn btn-op" onclick="setOperator('*')">×</button>
+
+    <button class="btn btn-num" onclick="appendNum('4')">4</button>
+    <button class="btn btn-num" onclick="appendNum('5')">5</button>
+    <button class="btn btn-num" onclick="appendNum('6')">6</button>
+    <button class="btn btn-op" onclick="setOperator('-')">−</button>
+
+    <button class="btn btn-num" onclick="appendNum('1')">1</button>
+    <button class="btn btn-num" onclick="appendNum('2')">2</button>
+    <button class="btn btn-num" onclick="appendNum('3')">3</button>
+    <button class="btn btn-op" onclick="setOperator('+')">+</button>
+
+    <button class="btn btn-num" onclick="appendNum('0')">0</button>
+    <button class="btn btn-special" onclick="appendDot()">.</button>
+    <button class="btn btn-equals" onclick="calculate()">=</button>
+  </div>
+
+  <div class="calc-footer">Powered by <span>VaultIQ</span> · KAYIRANGA Jesus</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
