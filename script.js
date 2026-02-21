@@ -51,6 +51,7 @@ function calculate(silent = false) {
       result = a / b;
       break;
   }
+
   result = parseFloat(result.toPrecision(12));
 
   if (!silent) {
@@ -61,6 +62,7 @@ function calculate(silent = false) {
   current = String(result);
   operator = null;
   previous = '';
+
   shouldReset = true;
   updateDisplay(result, !silent);
 }
